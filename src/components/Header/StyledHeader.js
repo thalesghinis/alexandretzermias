@@ -16,6 +16,11 @@ span {
 font-size: 14px;
 font-weight: 500;
 }
+
+@media (max-width: 844px) {
+    padding: 0 50px;
+    max-width: 480px;
+  }
 `;
 
 export const StyledUl = styled.ul`

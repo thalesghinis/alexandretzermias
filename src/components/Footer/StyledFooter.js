@@ -1,10 +1,20 @@
 import styled from 'styled-components';
 
 export const StyledFooter = styled.div`
-    width: 1200px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
-    min-height: 80%;
+    min-height: 60px;
+    background-color: #40838C;;
+`;
+
+export const StyledInfo = styled.span`
+    color: #fff;
+    @media (max-width: 844px) {
+        padding: 0 100px;
+      }
+    
 `;

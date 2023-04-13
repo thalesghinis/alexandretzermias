@@ -1,5 +1,4 @@
 import React from 'react'
-import Photo from '../../images/retangulo.png'
 import { 
     StyledAbout,
     StyledImg,
@@ -10,13 +9,15 @@ import {
 const About = () => {
     return (
         <>
-        <StyledImg src={Photo} alt='' />
+        <StyledImg alt=""/>
         <StyledTitle>
             Alexandre Tzemias
         </StyledTitle>
         <StyledAbout>
             <span>Médico Psiquiatra, Psiquiatra da Infância e Adolescência e terapeuta DBT. Co-fundador da DBT Campinas.</span>
             <span>Mentor da equipe de treinamento da DBT Brasil desde 2021. </span>
+            <span>Membro da Sociedade Iberoamericana de DBT desde 2022</span>
+            <span>Colunista do Portal Comporte-se <a href='https://comportese.com/'>(www.comportese.com.br)</a></span> 
         </StyledAbout>
         <StyledAbout>
             <h2>Formação</h2>
@@ -36,9 +37,6 @@ const About = () => {
                 • Supervisão em DBT com profissionais referência da área (Vinicius Dornelles e Pablo Gagliesi).
             </p>
         </StyledAbout>
-
-
-         
         </>
     )
 }
