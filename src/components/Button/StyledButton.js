@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 
 export const StyledButton = styled.button`
-    width: 150px;
+    width:  ${(props) => props.customWidth};
     background-color: #40838C;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     color: #FFF;
     margin-top: 10px;
     border-radius: 20px;
     cursor: pointer;
     :hover {
-        opacity: 0.3;
+        color: #40838C;
         transition: all 0.4s ease-in-out;
+        background-color: #9BBFC4;
     }
+
 `;

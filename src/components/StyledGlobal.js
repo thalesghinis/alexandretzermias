@@ -5,7 +5,6 @@ export const StyledContainer = styled.div`
     justify-content: space-between;
     margin: 0 auto;
     flex-wrap: wrap;
-    min-height: 80%;
 `;
 
 export const StyledScreen = styled.div`

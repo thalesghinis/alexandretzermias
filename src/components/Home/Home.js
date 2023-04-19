@@ -1,5 +1,4 @@
 import React  from 'react'
-import Photo from '../../images/ale2.png'
 import { 
   StyledHome, 
   StyledBox, 
@@ -9,18 +8,21 @@ import {
   StyledContact,
   StyledLink,
   StyledSpan,
-  StyledPhoto
+  StyledPhoto, 
+  StyledTitle,
+  StyledBoxContact,
+  StyledBoxInfoOne,
+  StyledBoxInfoTwo,
+  StyledWhats,
+  StyledPhoto2
 } from './StyledHome'
 import Button from '../Button/Button'
-
-import TextTransition, { presets } from "react-text-transition";
+import {Link} from 'react-router-dom';
 
 const TEXTS = [
   'ὁ βίος βραχὺς, ἡ δὲ τέχνη μακρὴ, ὁ δὲ καιρὸς ὀξὺς, ἡ δὲ πεῖρα σφαλερὴ,  ἡ δὲ κρίσις χαλεπή.',
   'A vida é breve, A arte é longa, A oportunidade passageira, A experiência enganosa, O julgamento difícil',
 ];
-
-
 
 const Home = () => {
 
@@ -34,14 +36,6 @@ const Home = () => {
     return () => clearTimeout(intervalId);
   }, []);
 
-  //<StyledBox>
-        
-  //<TextTransition springConfig={presets.wobbly}>
-   // {TEXTS[index % TEXTS.length]}
- // </TextTransition>
- // </StyledBox>
-
-
     return (
       <>
         <StyledHome>
@@ -51,49 +45,67 @@ const Home = () => {
             ἡ δὲ τέχνη μακρὴ,  <span>A arte é longa,</span>
             ὁ δὲ καιρὸς ὀξὺς,  <span>A oportunidade passageira,</span>
             ἡ δὲ πεῖρα σφαλερὴ, <span> A experiência enganosa,</span>
-            ἡ δὲ κρίσις χαλεπή.   <span>O julgamento difícil.</span>v
+            ἡ δὲ κρίσις χαλεπή.   <span>O julgamento difícil.</span>
           </StyledBox>
 
 
         </StyledHome>
         <StyledWhoAmI>
+        <StyledPhoto />
           <StyledContent>
             <h2>Dr Alexandre Tzermias</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque diam velit, sit amet lobortis erat ullamcorper vitae. Aliquam ac nunc vitae massa convallis interdum. Curabitur in nibh ac purus tristique elementum. In rhoncus dui enim, vel aliquam purus eleifend a. Curabitur eget mauris condimentum, tincidunt tortor in, tempor libero. Cras blandit scelerisque luctus. Nulla facilisi. Etiam lacinia efficitur purus ut commodo. Proin interdum neque a nisi euismod, id porta mi faucibus. Curabitur est mauris, auctor ut ante vitae, rhoncus tincidunt nibh. Ut eget est vel mi aliquam tincidunt vitae et velit. Suspendisse malesuada ex nulla, vel rhoncus lorem auctor eget. Nam laoreet arcu vel lectus viverra, et commodo risus venenatis. Phasellus a leo purus.</span>
+            <span>É minha missão contribuir com a disseminação do conhecimento atual, acurado e não pejorativo sobre o Transtorno de Personalidade Borderline e com o desenvolvimento de tratamentos efetivos, baseados em evidência e compassivos como a Terapia Comportamental Dialética (DBT) para esse transtorno, que é um dos mais estigmatizados na saúde mental.</span>
               <br />
-            <Button>teste</Button>
+              <Link to="/sobre">
+                <Button customWidth={'400px'}>Conheça minha formação</Button>
+              </Link>
           </StyledContent>
-          <StyledPhoto />
         </StyledWhoAmI>
 
         <StyledSubject>
           <StyledContent>
-            <h1>Assunto importante</h1>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque diam velit, sit amet lobortis erat ullamcorper vitae. Aliquam ac nunc vitae massa convallis interdum. Curabitur in nibh ac purus tristique elementum. In rhoncus dui enim, vel aliquam purus eleifend a. Curabitur eget mauris condimentum, tincidunt tortor in, tempor libero. Cras blandit scelerisque luctus. Nulla facilisi. Etiam lacinia efficitur purus ut commodo. Proin interdum neque a nisi euismod, id porta mi faucibus. Curabitur est mauris, auctor ut ante vitae, rhoncus tincidunt nibh. Ut eget est vel mi aliquam tincidunt vitae et velit. Suspendisse malesuada ex nulla, vel rhoncus lorem auctor eget. Nam laoreet arcu vel lectus viverra, et commodo risus venenatis. Phasellus a leo purus.</span>
+            <h1>Atuação</h1>
+            <span className='sectionUp'>
+              Avaliação e tratamento psiquiátrico de crianças e adolescentes 
+              (transtornos do neurodesenvolvimento, atraso do desenvolvimento e 
+              transtornos mentais da infância e adolescência; desregulação emocional 
+              pervasiva em adolescentes); avaliação e tratamento psiquiátrico de adultos 
+              (transtornos mentais diversos; especialista em desregulação 
+              emocional pervasiva/Transtorno de Personalidade Borderline em adultos; 
+              tratamento baseado nas guidelines atuais e utilizando, especialmente, 
+              princípios da DBT e tratamento com DBT Padrão). 
+              Em geral não tenho especialidade na avaliação e tratamento psiquiátrico 
+              de idosos (p. ex., casos específicos, doenças neurodegenerativas, 
+              síndrome demencial). Porém faço também avaliação e tratamento de casos 
+              menos específicos (transtornos mentais comuns, como transtorno de 
+              ansiedade e depressão).
+            </span>
+            <span className='sectionDown'>
+              <b>Membro da Sociedade Iberoamericana de DBT desde 2022</b>
+            </span>
+
+            <span className='sectionDown'>
+              <b>Colunista do Portal Comporte-se <a href='https://comportese.com/'>(www.comportese.com.br)</a></b>
+            </span>
           </StyledContent>
         </StyledSubject>
-
-        <StyledContact>
-        <StyledContent>
+        
+        <StyledWhoAmI>
+          <StyledContent>
             <h2>Contato</h2>
-            <span>(11)111111111</span>
-            <span>alexandre@alexandre.com</span>
-            <StyledLink href='https://www.instagram.com/alexandretzermias'>
-              <StyledSpan>Link do Instagram</StyledSpan>
-            </StyledLink>
-            <span>Endereço: <b>Rua xxxxxxxxxxxxxxxxxxx</b></span>
-            <StyledLink href='https://tinyurl.com/alexandretzermias'>
+            <span></span>      
+            <br />
+            <StyledWhats>
+          <StyledLink href='https://tinyurl.com/alexandretzermias'>
               Entre em contato diretamente pelo WhatsApp
               <Button>Botão WhatsApp </Button>
-            </StyledLink>
-
+          </StyledLink>
+        </StyledWhats>
           </StyledContent>
-        </StyledContact>
-
+        </StyledWhoAmI>
+        <StyledPhoto2 />
      </>
     )
 }
 
 export default Home;
-
-// <img src={Capa} alt=''/>
