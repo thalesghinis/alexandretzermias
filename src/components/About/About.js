@@ -3,7 +3,7 @@ import {
     StyledAbout,
     StyledImg,
     StyledTitle,
-    StyledCV
+    StyledCV,
   } from './StyledAbout'
 
 const About = () => {
@@ -19,6 +19,7 @@ const About = () => {
             <span>Membro da Sociedade Iberoamericana de DBT desde 2022</span>
             <span>Colunista do Portal Comporte-se <a href='https://comportese.com/'>(www.comportese.com.br)</a></span> 
         </StyledAbout>
+
         <StyledAbout>
             <h2>Formação</h2>
             <p>

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Capa from '../../images/capa5.jpg'
-import Photo from '../../images/ale2.png'
+import Photo from '../../images/alefoto1.jpg'
+import Photo2 from '../../images/alefoto2.jpg'
 
 export const StyledHome = styled.div`
 width: 100%;
@@ -17,12 +18,12 @@ background-repeat: no-repeat;
 `;
 
 export const StyledPhoto = styled.div`
-width: 400px;
+width: 220px;
 background-image: url(${Photo});
 background-position: center;
 background-size: 100%;
 background-repeat: no-repeat;
-
+border: 3px solid #40838C;
 @media (max-width: 844px) {
     height: 400px;
 }
@@ -49,14 +50,12 @@ span {
 `;
 
 export const StyledWhoAmI = styled.div`
-margin-top: 50px;
+width: 60%;
+margin: 0 auto;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 color: #40838C;
-img {
-    width: 30%;
-}
 
 @media (max-width: 844px) {
     display: flex;
@@ -65,7 +64,7 @@ img {
     justify-content: center;
     align-items: center;
 }
-  }
+}
 `;
 
 export const StyledContent = styled.div`
@@ -74,6 +73,7 @@ margin-bottom: 30px;
 display: flex;
 flex-direction: column;
 align-items: center;
+text-align: center;
 .sectionUp {
     margin-bottom: 20px;
 }
@@ -91,33 +91,13 @@ a {
 `;
 
 export const StyledSubject = styled.div`
-margin-top: 50px;
+margin: 50px 0;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 color: #fff;
 width: 100%;
 background-color: #40838C;
-`;
-
-export const StyledContact = styled.div`
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-color: #fff;
-background-color: #40838C;
-width: 60%;
-height: 180px;
-margin: 50px auto;
-border-radius: 50px;
-h2 {
-    font-size: 2em;    
-}
-@media (max-width: 844px) {
-    width: 82%;
-}
-
 `;
 
 export const StyledSpan = styled.span`
@@ -139,25 +119,6 @@ export const StyledTitle = styled.span`
     font-weight: bold;
 `;
 
-export const StyledBoxContact = styled.div`
-    width: 80%;
-    display: flex;
-    justify-content: center;
-`;
-
-export const StyledBoxInfoOne = styled.div`
-    border-right: 3px solid #e2e2e2;
-    padding: 0 50px 0 0;
-    display: flex;
-    flex-direction: column;
-`;
-
-export const StyledBoxInfoTwo = styled.div`
-    padding: 0 0 0 50px; 
-    display: flex;
-    flex-direction: column;
-`;
-
 export const StyledWhats = styled.div`
     width: 100%;
     display: flex;
@@ -171,4 +132,17 @@ export const StyledWhats = styled.div`
         align-items: center;
         margin-bottom: 60px;
     }
+`;
+
+export const StyledPhoto2 = styled.div`
+    background-image: url(${Photo2});
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    width: 500px;
+    height: 548px;
+    border: 3px solid #40838C;
+    transform: translate(0px, -50px);
+    border-radius: 0 0 0 150px;
 `;

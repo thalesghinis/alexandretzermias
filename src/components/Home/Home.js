@@ -1,5 +1,4 @@
 import React  from 'react'
-import Photo from '../../images/ale2.png'
 import { 
   StyledHome, 
   StyledBox, 
@@ -14,10 +13,11 @@ import {
   StyledBoxContact,
   StyledBoxInfoOne,
   StyledBoxInfoTwo,
-  StyledWhats
+  StyledWhats,
+  StyledPhoto2
 } from './StyledHome'
 import Button from '../Button/Button'
-
+import {Link} from 'react-router-dom';
 
 const TEXTS = [
   'ὁ βίος βραχὺς, ἡ δὲ τέχνη μακρὴ, ὁ δὲ καιρὸς ὀξὺς, ἡ δὲ πεῖρα σφαλερὴ,  ἡ δὲ κρίσις χαλεπή.',
@@ -51,13 +51,15 @@ const Home = () => {
 
         </StyledHome>
         <StyledWhoAmI>
+        <StyledPhoto />
           <StyledContent>
             <h2>Dr Alexandre Tzermias</h2>
             <span>É minha missão contribuir com a disseminação do conhecimento atual, acurado e não pejorativo sobre o Transtorno de Personalidade Borderline e com o desenvolvimento de tratamentos efetivos, baseados em evidência e compassivos como a Terapia Comportamental Dialética (DBT) para esse transtorno, que é um dos mais estigmatizados na saúde mental.</span>
               <br />
-            <Button>teste</Button>
+              <Link to="/sobre">
+                <Button customWidth={'400px'}>Conheça minha formação</Button>
+              </Link>
           </StyledContent>
-          <StyledPhoto />
         </StyledWhoAmI>
 
         <StyledSubject>
@@ -87,32 +89,21 @@ const Home = () => {
             </span>
           </StyledContent>
         </StyledSubject>
-
-        <StyledContact>
+        
+        <StyledWhoAmI>
+          <StyledContent>
             <h2>Contato</h2>
-            <StyledBoxContact>
-           <StyledBoxInfoOne>
-              <span>(19) 99498-0627</span>
-              <span>alexandre@alexandre.com</span>
-              <StyledLink href='https://www.instagram.com/alexandretzermias'>
-                <StyledSpan>Link do Instagram</StyledSpan>
-              </StyledLink>
-           </StyledBoxInfoOne>
-           <StyledBoxInfoTwo>
-                
-                <StyledTitle>Mentor Clinic</StyledTitle>
-                Rua Olavo Bilac, 67, Jaguariúna - SP
-            
-            </StyledBoxInfoTwo>
-            </StyledBoxContact>
-           
-        </StyledContact>
-        <StyledWhats>
+            <span></span>      
+            <br />
+            <StyledWhats>
           <StyledLink href='https://tinyurl.com/alexandretzermias'>
               Entre em contato diretamente pelo WhatsApp
               <Button>Botão WhatsApp </Button>
           </StyledLink>
         </StyledWhats>
+          </StyledContent>
+        </StyledWhoAmI>
+        <StyledPhoto2 />
      </>
     )
 }
