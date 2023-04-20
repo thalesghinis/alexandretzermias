@@ -8,7 +8,9 @@ width: 100%;
 background-image: url(${Capa});
 opacity: 0.7;
 background-position: center;
-background-repeat: no-repeat
+background-repeat: no-repeat;
+background-size: 100%;
+height: 100vh;
 `;
 
 export const StyledBox = styled.div`

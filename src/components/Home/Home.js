@@ -5,16 +5,11 @@ import {
   StyledWhoAmI, 
   StyledContent, 
   StyledSubject, 
-  StyledContact,
   StyledLink,
-  StyledSpan,
   StyledPhoto, 
-  StyledTitle,
-  StyledBoxContact,
-  StyledBoxInfoOne,
-  StyledBoxInfoTwo,
   StyledWhats,
-  StyledPhoto2
+  StyledPhoto2,
+  StyledWhoAmITwo
 } from './StyledHome'
 import Button from '../Button/Button'
 import {Link} from 'react-router-dom';
@@ -90,20 +85,20 @@ const Home = () => {
           </StyledContent>
         </StyledSubject>
         
-        <StyledWhoAmI>
+        <StyledWhoAmITwo>
           <StyledContent>
             <h2>Contato</h2>
             <span></span>      
             <br />
             <StyledWhats>
-          <StyledLink href='https://tinyurl.com/alexandretzermias'>
-              Entre em contato diretamente pelo WhatsApp
-              <Button>Botão WhatsApp </Button>
-          </StyledLink>
-        </StyledWhats>
+              <StyledLink href='https://tinyurl.com/alexandretzermias'>
+                  Entre em contato diretamente pelo WhatsApp
+                  <Button>Botão WhatsApp </Button>
+              </StyledLink>
+            </StyledWhats>
           </StyledContent>
-        </StyledWhoAmI>
-        <StyledPhoto2 />
+          <StyledPhoto2 />
+        </StyledWhoAmITwo>
      </>
     )
 }
