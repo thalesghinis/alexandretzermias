@@ -10,6 +10,7 @@ background-position: center;
 height: 600px;
 background-size: 100%;
 background-repeat: no-repeat;
+margin-bottom: 50px;
 
 @media (max-width: 844px) {
     height: 400px;
@@ -54,7 +55,25 @@ width: 60%;
 margin: 0 auto;
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: space-between;
+color: #40838C;
+
+@media (max-width: 844px) {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+}
+`;
+
+export const StyledWhoAmITwo = styled.div`
+width: 100%;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 color: #40838C;
 
 @media (max-width: 844px) {

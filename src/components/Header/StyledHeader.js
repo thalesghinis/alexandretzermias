@@ -42,12 +42,12 @@ font-size: 14px;
 `;
 
 export const StyledLogo = styled.div`
-width: 150px;
+width: 120px;
 background-image: url(${Logo});
 background-position: center;
 height: 100%;
 background-size: 100%;
-background-repeat: no-repeat
+background-repeat: no-repeat;
 border: none;
 `;
 
