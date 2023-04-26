@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Capa from '../../images/capa5.jpg'
+import Capa from '../../images/home.jpg'
 import Photo from '../../images/alefoto1.jpg'
 import Photo2 from '../../images/alefoto2.jpg'
 
@@ -7,7 +7,7 @@ export const StyledHome = styled.div`
 width: 100%;
 background-image: url(${Capa});
 background-position: center;
-height: 600px;
+height: 500px;
 background-size: 100%;
 background-repeat: no-repeat;
 margin-bottom: 50px;
@@ -86,6 +86,28 @@ color: #40838C;
 }
 `;
 
+export const StyledWhoAmIThree = styled.div`
+width: 100%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+color: #40838C;
+span {
+    color: red;
+}
+
+@media (max-width: 844px) {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+}
+`;
+
+
 export const StyledContent = styled.div`
 width: 50%;
 margin-bottom: 30px;
@@ -93,16 +115,21 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
+justify-content: center;
+font-size: 20px;
 .sectionUp {
     margin-bottom: 20px;
+    font-size: 18px;
 }
 .sectionDown {
     width: 100%;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 a {
-    color: #fff;
+    color: #40838C;
     text-decoration: none;
+    margin-left: 5px;
 }
 @media (max-width: 844px) {
     width: 90%;
@@ -110,7 +137,7 @@ a {
 `;
 
 export const StyledSubject = styled.div`
-margin: 50px 0;
+margin: 50px 0 0;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
@@ -127,11 +154,13 @@ export const StyledSpan = styled.span`
 export const StyledLink = styled.a`
     text-decoration: none;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     font-weight: bold;
-    color: #fff;
-    margin: 10px 0 0;
+    color: #40838C;
+    margin-left: 5px;
 `;
 
 export const StyledTitle = styled.span`
@@ -143,13 +172,9 @@ export const StyledWhats = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    a {
-        color: #40838C;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 60px;
+   
+    span {
+        font-weight: bold;
     }
 `;
 
@@ -162,6 +187,5 @@ export const StyledPhoto2 = styled.div`
     width: 500px;
     height: 548px;
     border: 3px solid #40838C;
-    transform: translate(0px, -50px);
     border-radius: 0 0 0 150px;
 `;

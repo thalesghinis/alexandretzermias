@@ -35,12 +35,17 @@ export const StyledAbout = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-
     a {
-        color: #fff;
+        color: #40838C;
+        opacity: 0.4;
         text-decoration: none;
     }
-
+    h2 {
+        margin-bottom: 0px;
+    }
+    &.aboutGap {
+        gap: 15px;
+    }
     &:last-child {
         margin-bottom: 50px;
     }

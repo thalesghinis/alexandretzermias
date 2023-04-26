@@ -45,7 +45,7 @@ export const StyledLogo = styled.div`
 width: 120px;
 background-image: url(${Logo});
 background-position: center;
-height: 100%;
+height: 100px;
 background-size: 100%;
 background-repeat: no-repeat;
 border: none;

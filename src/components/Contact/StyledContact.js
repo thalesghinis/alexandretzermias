@@ -11,6 +11,12 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: 100%;
 height: 100vh;
+hr {
+    width: 300px;
+    height: 2px;
+    background-color: #40838C;
+    border: none;
+}
 `;
 
 export const StyledBox = styled.div`
@@ -21,7 +27,7 @@ background-position: right;
 background-repeat: no-repeat;
 background-color: #fff;
 width: 500px;
-height: 500px;
+height: 700px;
 margin: 50px auto;
 border-radius: 50px;
 `;
@@ -73,6 +79,7 @@ flex-direction: column;
 align-items: center;
 font-weight: bold;
 color: #000;
+  
 `;
 
 export const StyledTitle = styled.span`
@@ -86,6 +93,10 @@ display: flex;
 flex-direction: column;
 padding: 20px;
 gap: 10px;
+a {
+    color: #40838C;
+    text-decoration: none;
+}
 @media (max-width: 844px) {
     gap: 15px;
 }
