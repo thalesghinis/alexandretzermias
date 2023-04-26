@@ -6,7 +6,9 @@ const Header = () => {
     return (
         <StyledTeste>
             <StyledHeader>
-            <StyledLogo />
+            <Link style={{ textDecoration: 'none'}} to="/">
+                <StyledLogo/>
+            </Link>
             <StyledUl>
                     <Link style={{ textDecoration: 'none'}} to="/">
                         <StyledLi>Home</StyledLi>
@@ -16,9 +18,6 @@ const Header = () => {
                     </Link>
                     <Link style={{ textDecoration: 'none'}}to="/contato">
                         <StyledLi>Contato</StyledLi>
-                    </Link>
-                    <Link style={{ textDecoration: 'none'}} to="/">
-                        <StyledLi>?</StyledLi>
                     </Link>
             </StyledUl>
             </StyledHeader>

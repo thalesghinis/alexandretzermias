@@ -9,7 +9,8 @@ import {
   StyledPhoto, 
   StyledWhats,
   StyledPhoto2,
-  StyledWhoAmITwo
+  StyledWhoAmITwo,
+  StyledWhoAmIThree
 } from './StyledHome'
 import Button from '../Button/Button'
 import {Link} from 'react-router-dom';
@@ -76,27 +77,25 @@ const Home = () => {
               ansiedade e depressão).
             </span>
             <span className='sectionDown'>
-              <b>Membro da Sociedade Iberoamericana de DBT desde 2022</b>
-            </span>
-
-            <span className='sectionDown'>
-              <b>Colunista do Portal Comporte-se <a href='https://comportese.com/'>(www.comportese.com.br)</a></b>
+              <b>Co-fundador da DBT Campinas</b>
             </span>
           </StyledContent>
         </StyledSubject>
         
         <StyledWhoAmITwo>
-          <StyledContent>
-            <h2>Contato</h2>
-            <span></span>      
-            <br />
-            <StyledWhats>
-              <StyledLink href='https://tinyurl.com/alexandretzermias'>
-                  Entre em contato diretamente pelo WhatsApp
-                  <Button>Botão WhatsApp </Button>
-              </StyledLink>
-            </StyledWhats>
-          </StyledContent>
+            <StyledContent>
+              <h2>Contato</h2>
+              <span></span>      
+              <br />
+              <StyledWhats>
+                <span>
+                    Veja as formas de entrar em contato 
+                    <Link style={{ textDecoration: 'none'}}to="/contato">
+                        aqui!
+                    </Link>
+                </span>
+              </StyledWhats>
+            </StyledContent>
           <StyledPhoto2 />
         </StyledWhoAmITwo>
      </>
