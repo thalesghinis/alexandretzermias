@@ -35,17 +35,15 @@ const Home = () => {
     return (
       <>
         <StyledHome>
-       
           <StyledBox>
-            ὁ βίος βραχὺς, <span>A vida é breve,</span>
-            ἡ δὲ τέχνη μακρὴ,  <span>A arte é longa,</span>
-            ὁ δὲ καιρὸς ὀξὺς,  <span>A oportunidade passageira,</span>
-            ἡ δὲ πεῖρα σφαλερὴ, <span> A experiência enganosa,</span>
-            ἡ δὲ κρίσις χαλεπή.   <span>O julgamento difícil.</span>
+              ὁ βίος βραχὺς, <span>A vida é breve,</span>
+              ἡ δὲ τέχνη μακρὴ,  <span>A arte é longa,</span>
+              ὁ δὲ καιρὸς ὀξὺς,  <span>A oportunidade passageira,</span>
+              ἡ δὲ πεῖρα σφαλερὴ, <span> A experiência enganosa,</span>
+              ἡ δὲ κρίσις χαλεπή.   <span>O julgamento difícil.</span>
           </StyledBox>
-
-
         </StyledHome>
+      
         <StyledWhoAmI>
         <StyledPhoto />
           <StyledContent>

@@ -13,9 +13,9 @@ export const StyledFooter = styled.div`
 
 export const StyledInfo = styled.span`
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     @media (max-width: 844px) {
-        padding: 0 100px;
+        padding: 0 50px;
       }
     
 `;

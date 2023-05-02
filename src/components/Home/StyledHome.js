@@ -11,7 +11,7 @@ height: 500px;
 background-size: 100%;
 background-repeat: no-repeat;
 margin-bottom: 50px;
-
+transform: scaleX(-1);
 @media (max-width: 844px) {
     height: 400px;
 }
@@ -20,13 +20,14 @@ margin-bottom: 50px;
 
 export const StyledPhoto = styled.div`
 width: 220px;
+height: 300px;
 background-image: url(${Photo});
 background-position: center;
 background-size: 100%;
 background-repeat: no-repeat;
 border: 3px solid #40838C;
 @media (max-width: 844px) {
-    height: 400px;
+    height: 300px;
 }
 
 `;
@@ -35,14 +36,16 @@ export const StyledBox = styled.div`
 display: flex;
 justify-content: flex-start;
 margin-left: 100px;
-padding: 60px;
+padding: 44px 100px 0px 140px;
 font-weight: 800;
-font-size: 26px;
-color: #fff;
+font-size: 20px;
+color: #40838C;
 flex-direction: column;
+transform: scaleX(-1);
 span {
-    color: #fff;
-    opacity: 0.4;
+    color: #40838C;
+    opacity: 0.8;
+    font-size: 14px;
 }
 @media (max-width: 844px) {
         display: none;
@@ -57,6 +60,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 color: #40838C;
+align-items: center;
 
 @media (max-width: 844px) {
     display: flex;

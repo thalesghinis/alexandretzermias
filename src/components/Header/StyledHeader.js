@@ -18,7 +18,7 @@ font-weight: 500;
 }
 
 @media (max-width: 844px) {
-    padding: 0 50px;
+    padding: 0;
     max-width: 480px;
   }
 `;
