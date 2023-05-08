@@ -10,10 +10,12 @@ background-position: center;
 height: 500px;
 background-size: 100%;
 background-repeat: no-repeat;
+border-radius: 0 0 0 400px;
 margin-bottom: 50px;
 transform: scaleX(-1);
 @media (max-width: 844px) {
     height: 400px;
+    border-radius: 0;
 }
 
 `;
@@ -33,24 +35,28 @@ border: 3px solid #40838C;
 `;
 
 export const StyledBox = styled.div`
+width: 100%;
 display: flex;
-justify-content: flex-start;
-margin-left: 100px;
-padding: 44px 100px 0px 140px;
+justify-content: space-between;
+padding: 50px;
 font-weight: 800;
-font-size: 20px;
+font-size: 24px;
 color: #40838C;
-flex-direction: column;
-transform: scaleX(-1);
+flex-direction: row;
 span {
     color: #40838C;
-    opacity: 0.8;
+    opacity: 0.4;
     font-size: 14px;
 }
 @media (max-width: 844px) {
         display: none;
   }
+`;
 
+export const StyledGreek = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
 `;
 
 export const StyledWhoAmI = styled.div`
@@ -141,13 +147,16 @@ a {
 `;
 
 export const StyledSubject = styled.div`
-margin: 50px 0 0;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 color: #fff;
 width: 100%;
+border-radius: 300px 0 0 0;
 background-color: #40838C;
+@media (max-width: 844px) {
+    border-radius: 0;
+}
 `;
 
 export const StyledSpan = styled.span`

@@ -10,7 +10,8 @@ import {
   StyledWhats,
   StyledPhoto2,
   StyledWhoAmITwo,
-  StyledWhoAmIThree
+  StyledWhoAmIThree,
+  StyledGreek
 } from './StyledHome'
 import Button from '../Button/Button'
 import {Link} from 'react-router-dom';
@@ -35,13 +36,7 @@ const Home = () => {
     return (
       <>
         <StyledHome>
-          <StyledBox>
-              ὁ βίος βραχὺς, <span>A vida é breve,</span>
-              ἡ δὲ τέχνη μακρὴ,  <span>A arte é longa,</span>
-              ὁ δὲ καιρὸς ὀξὺς,  <span>A oportunidade passageira,</span>
-              ἡ δὲ πεῖρα σφαλερὴ, <span> A experiência enganosa,</span>
-              ἡ δὲ κρίσις χαλεπή.   <span>O julgamento difícil.</span>
-          </StyledBox>
+         
         </StyledHome>
       
         <StyledWhoAmI>
@@ -55,7 +50,23 @@ const Home = () => {
               </Link>
           </StyledContent>
         </StyledWhoAmI>
-
+        <StyledBox>
+          <StyledGreek>
+              ὁ βίος βραχὺς <span>A vida é breve</span>
+          </StyledGreek>
+              <StyledGreek>
+                ἡ δὲ τέχνη μακρὴ  <span>A arte é longa</span>
+              </StyledGreek>
+              <StyledGreek>
+                ὁ δὲ καιρὸς ὀξὺς  <span>A oportunidade passageira</span>
+              </StyledGreek>
+              <StyledGreek>
+                ἡ δὲ πεῖρα σφαλερὴ <span> A experiência enganosa</span>
+              </StyledGreek>
+              <StyledGreek>
+                ἡ δὲ κρίσις χαλεπή   <span>O julgamento difícil</span>
+              </StyledGreek>
+          </StyledBox>
         <StyledSubject>
           <StyledContent>
             <h1>Atuação</h1>
@@ -79,7 +90,7 @@ const Home = () => {
             </span>
           </StyledContent>
         </StyledSubject>
-        
+
         <StyledWhoAmITwo>
             <StyledContent>
               <h2>Contato</h2>
