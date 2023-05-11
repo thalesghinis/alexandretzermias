@@ -36,49 +36,64 @@ const Home = () => {
     return (
       <>
         <StyledHome>
-         
+          <StyledBox>
+            <StyledGreek>
+                ὁ βίος βραχὺς <span>A vida é breve</span>
+            </StyledGreek>
+            <StyledGreek>
+              ἡ δὲ τέχνη μακρὴ  <span>A arte é longa</span>
+            </StyledGreek>
+            <StyledGreek>
+              ὁ δὲ καιρὸς ὀξὺς  <span>A oportunidade passageira</span>
+            </StyledGreek>
+            <StyledGreek>
+              ἡ δὲ πεῖρα σφαλερὴ <span> A experiência enganosa</span>
+            </StyledGreek>
+            <StyledGreek>
+              ἡ δὲ κρίσις χαλεπή   <span>O julgamento difícil</span>
+            </StyledGreek>
+            <StyledGreek><h5>- Hipócrates, primeiro aforismo</h5></StyledGreek>
+          </StyledBox>
         </StyledHome>
       
         <StyledWhoAmI>
+          
         <StyledPhoto />
+        
           <StyledContent>
             <h2>Dr Alexandre Tzermias</h2>
-            <span>É minha missão contribuir com a disseminação do conhecimento atual, acurado e não pejorativo sobre o Transtorno de Personalidade Borderline e com o desenvolvimento de tratamentos efetivos, baseados em evidência e compassivos como a Terapia Comportamental Dialética (DBT) para esse transtorno, que é um dos mais estigmatizados na saúde mental.</span>
-              <br />
+            <span>Atendimento psiquiátrico humanizado e baseado em evidências científicas para tratamento de pessoas (crianças, adolescentes e adultos) com problemas psiquiátricos (transtornos mentais).</span><br />
+            <span>
+            A minha marca é enxergar a pessoa, e não apenas  o diagnóstico, mas também não evitar dar diagnósticos quando eles são necessários e sabê-los pode auxiliar a escolher tratamentos que funcionem e ajudem a aliviar o sofrimento.</span><br />
+            <span>
+            É minha missão contribuir com a disseminação do conhecimento atual, acurado e não pejorativo sobre o Transtorno de Personalidade Borderline e com o desenvolvimento de tratamentos efetivos, baseados em evidência e compassivos como a Terapia Comportamental Dialética (DBT) para esse transtorno, que é um dos mais estigmatizados na saúde mental.</span><br />
               <Link to="/sobre">
                 <Button customWidth={'400px'}>Conheça minha formação</Button>
               </Link>
           </StyledContent>
         </StyledWhoAmI>
-        <StyledBox>
-          <StyledGreek>
-              ὁ βίος βραχὺς <span>A vida é breve</span>
-          </StyledGreek>
-              <StyledGreek>
-                ἡ δὲ τέχνη μακρὴ  <span>A arte é longa</span>
-              </StyledGreek>
-              <StyledGreek>
-                ὁ δὲ καιρὸς ὀξὺς  <span>A oportunidade passageira</span>
-              </StyledGreek>
-              <StyledGreek>
-                ἡ δὲ πεῖρα σφαλερὴ <span> A experiência enganosa</span>
-              </StyledGreek>
-              <StyledGreek>
-                ἡ δὲ κρίσις χαλεπή   <span>O julgamento difícil</span>
-              </StyledGreek>
-          </StyledBox>
+       
         <StyledSubject>
           <StyledContent>
             <h1>Atuação</h1>
-            <span className='sectionUp'>
-              Avaliação e tratamento psiquiátrico de crianças e adolescentes 
-              (transtornos do neurodesenvolvimento, atraso do desenvolvimento e 
-              transtornos mentais da infância e adolescência; desregulação emocional 
-              pervasiva em adolescentes); avaliação e tratamento psiquiátrico de adultos 
+              <span className='sectionUp'>
+              • Avaliação e tratamento psiquiátrico de crianças e adolescentes 
+                (transtornos do neurodesenvolvimento, atraso do desenvolvimento e 
+                transtornos mentais da infância e adolescência);
+              </span>
+              <span className='sectionUp'>
+              • Desregulação emocional (pervasiva em adolescentes);
+              </span>
+              <span className='sectionUp'>
+              • Avaliação e tratamento psiquiátrico de adultos 
               (transtornos mentais diversos; especialista em desregulação 
               emocional pervasiva/Transtorno de Personalidade Borderline em adultos; 
-              tratamento baseado nas guidelines atuais e utilizando, especialmente, 
+              </span>
+              <span className='sectionUp'>
+              • Tratamento baseado nas guidelines atuais e utilizando, especialmente, 
               princípios da DBT e tratamento com DBT Padrão). 
+              </span>
+              <span className='sectionUp'>
               Em geral não tenho especialidade na avaliação e tratamento psiquiátrico 
               de idosos (p. ex., casos específicos, doenças neurodegenerativas, 
               síndrome demencial). Porém faço também avaliação e tratamento de casos 

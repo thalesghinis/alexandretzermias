@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Capa from '../../images/home.jpg'
+import Capa from '../../images/capa_transparent.jpg'
 import Photo from '../../images/alefoto1.jpg'
 import Photo2 from '../../images/alefoto2.jpg'
 
@@ -42,29 +42,36 @@ padding: 50px;
 font-weight: 800;
 font-size: 24px;
 color: #40838C;
-flex-direction: row;
+flex-direction: column;
+transform: scaleX(-1);
 span {
     color: #40838C;
-    opacity: 0.4;
+    opacity: 0.8;
     font-size: 14px;
+}
+h5 {
+    font-size: 18px;
+    margin: 10px 0;
 }
 @media (max-width: 844px) {
         display: none;
   }
 `;
 
-export const StyledGreek = styled.div`
+export const StyledGreek = styled.h3`
 display: flex;
 flex-direction: column;
-align-items: center;
+align-items: flex-start;
+padding: 0 10px 0 100px;
+margin: 5px 0;
 `;
 
 export const StyledWhoAmI = styled.div`
-width: 60%;
+width: 80%;
 margin: 0 auto;
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
 color: #40838C;
 align-items: center;
 
@@ -128,8 +135,10 @@ text-align: center;
 justify-content: center;
 font-size: 20px;
 .sectionUp {
+    width: 100%;
     margin-bottom: 20px;
     font-size: 18px;
+    text-align: initial;
 }
 .sectionDown {
     width: 100%;
